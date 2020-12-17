@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~tailwindcss/dist/base.min.css"
+@import "~tailwindcss/dist/components.css"
+@import "~tailwindcss/dist/utilities.min.css"
+
+/* Smartphones ---------- */
+@media only screen and (max-width: 767px)
+  header > img
+    height: 5%
+    width: auto
+  .blocker
+    display: none
+
+/* Tablets ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1223px)
+  header-component
+    color: red
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) and (max-width: 1823px)
+  header-component
+    text-align: center
+
+  navigation-component
+    text-align: center
+  #logo
+    height: 120px
+    width: auto
+    display: inline-block
+
+  #p
+    color: blue
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px)
+  header-component
+    color: aqua
+
+
+
